@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Birthday</title>
+</head>
+<body>
+  <h2>🎉 Birthday Guesser 🎉</h2>
+  <p>Is it your birthday today..? 😵‍💫 </p>
+  <p>Forgot ? I gotchu!</p>
+  <br><br>
+  <label>Enter your birthday:</label><br><br>
+  <input type="date" id="bday">
+
+  <div class="countdown">
+    <div class="time-box">
+      <span id="days">00</span>
+      <small>Days</small>
+    </div>
+    <div class="time-box">
+      <span id="hours">00</span>
+      <small>Hours</small>
+    </div>
+    <div class="time-box">
+      <span id="minutes">00</span>
+      <small>Min</small>
+    </div>
+    <div class="time-box">
+      <span id="seconds">00</span>
+      <small>Sec</small>
+    </div>
+  </div>
+
+  <div class="marquee-container">
+    <div id="output" class="marquee"></div>
+  </div>
+
+  <div class="button-container">
+    <button id="openBtn" style="display:none;">For you 💌</button>
+  </div>
+
+
+  <div id="envelope" class="envelope hidden">
+    <div class="letter">
+      <h3>Dear You,</h3>
+      <p>
+        Wishing you a very very Happy Birthday! 🎉  
+        I hope this year brings you happiness, growth, and lots of success.
+      </p>
+      <p>– From your future self 💙</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
